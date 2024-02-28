@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@1,400..900&display=swap');
+/*
+    font-family: "Playfair Display",
+    serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: italic;
+
+    .dancing-script-<uniquifier> {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --colorprincipal: #58fefe;
+    --colorsecundario: #28253d;
+    --fontsize: 1rem;
+    --anchomaximo: 68.75em;
+    --margingrid: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+    padding: 0 0.625em;
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+}
+
+.activo {
+    color: var(--colorprincipal) !important;
+}

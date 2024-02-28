@@ -1,0 +1,106 @@
+@import url(./corporative.css);
+@import url(./reset.css);
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(180deg, rgb(60, 107, 81), rgb(163, 129, 201));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 450px;
+}
+
+.algoNuevo {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed salmon;
+
+
+
+    & h3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        padding-bottom: 20px;
+        font-family: "Playflair Display", italic;
+        font-style: italic;
+        color: rgb(46, 41, 49);
+
+    }
+
+    & #input {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    & input {
+        border: dotted salmon 1px;
+        border-radius: 15px;
+        height: 30px;
+        background-color: #ffaaac88;
+        text-align: center;
+
+    }
+
+    & select {
+        border: dotted salmon 1px;
+        border-radius: 15px;
+        height: 25px;
+        background-color: #ffaaac88;
+    }
+}
+
+
+
+hr {
+    text-align: center;
+    height: 2px;
+    color: var(--colorsecundario);
+    background-color: var(--colorsecundario);
+    width: 200px;
+}
+
+body article {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: left;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.25rem;
+    align-items: center;
+    color: rgb(26, 23, 28);
+
+
+    & p {
+        width: 450px;
+    }
+
+    & button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background-color: #ffaaac88;
+
+    }
+
+}
