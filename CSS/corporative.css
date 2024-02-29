@@ -32,17 +32,15 @@ img {
     display: block;
 }
 
-.container {
-    max-width: var(--anchomaximo);
-    margin: 0 auto;
-    padding: 0 0.625em;
-}
+.styleSelect {
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    color: #1f1d1d;
+    font-family: "Playfair Display", italic;
+    color: rgba(0, 0, 0, 0.478);
+    border: 2px dashed salmon;
+    transition: all 0.25s ease;
+    text-align: center;
 
-body {
-    font-family: var(--fuenteprincipal);
-    font-size: var(--fontsize);
-}
-
-.activo {
-    color: var(--colorprincipal) !important;
 }

@@ -23,39 +23,55 @@
                     <input type="text" name="tareaInput" id="tareaInput" placeholder="¿Qué hay que hacer?">
                 </div>
 
-                <select id="selectImportant">
+                <select class="styleSelect" id="selectImportant">
                     <option value="">¿Cómo de importante es?</option>
                     <option value="urgente">Urgente</option>
                     <option value="diaria">Diaria</option>
                     <option value="mensual">Mensual</option>
                 </select>
 
-                <input type="submit" value="Ok">
+                <input type="submit" value="0k">
             </form>
 
             <hr>
 
             <h3>~¿Qué toca hoy?~</h3>
 
+            <article class="filtros">
+                <form id="filter">
+                    <div>
+                        <input type="text" id="buscadorTarea">
+                    </div>
+                    <input type="submit" value="0k">
+                </form>
+
+                <select class="styleSelect" id="selectUrgencia">
+                    <option value="">Busca por urgencia</option>
+                    <option value="urgente">¡Urgente!</option>
+                    <option value="diaria">Diaria</option>
+                    <option value="mensual">Mensual</option>
+                </select>
+            </article>
         </div>
+        <div id="articleContainer">
+            <article>
+                <i class="fa-solid fa-play urgente"></i>
+                <p>hfhfhfhfhfhfhf</p>
+                <button><i class="fa-solid fa-heart iconColor"></i></button>
+            </article>
 
-        <article>
-            <i>foto</i>
-            <p>hfhfhfhfhfhfhf</p>
-            <button><i>foto</i></button>
-        </article>
+            <article>
+                <i class="fa-solid fa-play diaria"></i>
+                <p>hfhfhfhfhfhfhf</p>
+                <button><i class="fa-solid fa-heart iconColor"></i></button>
+            </article>
 
-        <article>
-            <i>foto</i>
-            <p>hfhfhfhfhfhfhf</p>
-            <button><i>foto</i></button>
-        </article>
-
-        <article>
-            <i>foto</i>
-            <p>hfhfhfhfhfhfhf</p>
-            <button><i>foto</i></button>
-        </article>
+            <article>
+                <i class="fa-solid fa-play diaria mensual"></i>
+                <p>hfhfhfhfhfhfhf</p>
+                <button><i class="fa-solid fa-heart iconColor"></i></button>
+            </article>
+        </div>
     </div>
 
 

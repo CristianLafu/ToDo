@@ -1,5 +1,6 @@
 @import url(./corporative.css);
 @import url(./reset.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 html {
     height: 100%;
@@ -55,13 +56,16 @@ body {
         height: 30px;
         background-color: #ffaaac88;
         text-align: center;
+        appearance: none;
+        font-family: "Playfair Display", italic;
+        align-items: center;
 
     }
 
     & select {
         border: dotted salmon 1px;
         border-radius: 15px;
-        height: 25px;
+        height: 30px;
         background-color: #ffaaac88;
     }
 }
@@ -74,6 +78,22 @@ hr {
     color: var(--colorsecundario);
     background-color: var(--colorsecundario);
     width: 200px;
+}
+
+body .wrapper .algoNuevo .filtros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: -20px;
+
+
+
+    & #filter {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
 }
 
 body article {
@@ -90,6 +110,7 @@ body article {
     color: rgb(26, 23, 28);
 
 
+
     & p {
         width: 450px;
     }
@@ -103,4 +124,20 @@ body article {
 
     }
 
+}
+
+.iconColor {
+    color: rgba(60, 107, 81, 0.687);
+}
+
+.urgente {
+    color: rgba(255, 99, 71, 0.700);
+}
+
+.diaria {
+    color: rgba(76, 0, 130, 0.700);
+}
+
+.mensual {
+    color: rgba(0, 128, 0, 0.700);
 }
