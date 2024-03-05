@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function borrarTarea(event) {
-        let id = Number(event.target.dataset.id);
+        let id = Number(event.target.parentNode.dataset.id);
         let posicion = arrayTareas.findIndex(tarea => tarea.id === id);
         arrayTareas.splice(posicion, 1);
 
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         button.addEventListener('click', borrarTarea);
         button.dataset.id = newTarea.id;
-        button.innerHTML = '<i class="fa-solid fa-heart iconColor"></i>';
+        button.innerHTML = '<i class="fa-solid fa-trash iconColor"></i>';
 
         icon.classList.add('fa-solid', 'fa-play', newTarea.seleccionarurgencia.toLowerCase());
         p.textContent = newTarea.value.toUpperCase();
